@@ -1,0 +1,205 @@
+/* Design Tokens & Root Variables */
+:root {
+    --primary-green: #2ecc71;
+    --dark-green: #27ae60;
+    --light-green: #e8f5e9;
+    --accent-color: #f1c40f;
+    --dark-bg: #1a1a1a;
+    --text-color: #333;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Navigation Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-color) !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-green) !important;
+}
+
+/* Custom Unordered List */
+.custom-plant-list {
+    list-style: none; /* No list style */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.custom-plant-list li {
+    background-color: var(--light-green); /* Background color */
+    border: 2px solid var(--primary-green); /* Border */
+    border-radius: 12px; /* Radius */
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.custom-plant-list li:hover {
+    background-color: var(--primary-green); /* Hover effect */
+    color: var(--white);
+    transform: translateX(10px);
+    box-shadow: var(--shadow);
+}
+
+/* Premium Membership Section Styling */
+.membership-premium-card {
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    background: var(--white);
+    border: none;
+}
+
+.membership-header {
+    background: linear-gradient(135deg, var(--dark-green), #1b5e20);
+    color: var(--white);
+}
+
+.benefit-item {
+    transition: var(--transition);
+    background-color: #fafafa;
+}
+
+.benefit-item:hover {
+    background-color: var(--white);
+    border-color: var(--primary-green) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.icon-box img {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* Date & Time Display  */
+#current-date-time {
+    font-weight: 600;
+    color: var(--dark-green);
+    font-size: 1.1rem;
+}
+
+/* Product Card Styling */
+.product-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+.product-img-wrapper {
+    height: 300px;
+    overflow: hidden;
+}
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+.product-card:hover .product-img-wrapper img {
+    transform: scale(1.1);
+}
+.price-tag {
+    color: var(--primary-green);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+}
+
+/* Contact Form Styling */
+.contact-form-wrapper {
+    background: var(--white);
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+/* External Link Styling  */
+.external-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.external-link:hover {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Footer Styling (Restored Premium Design) */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 80px 0 40px 0;
+    margin-top: 80px;
+}
+
+.footer-link {
+    color: #bbb;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--primary-green);
+    padding-left: 5px;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+/* Custom Collapse Logic */
+.custom-collapse {
+    display: none;
+}
+
+.custom-collapse.show {
+    display: block;
+}
+
+
