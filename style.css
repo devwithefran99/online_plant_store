@@ -16,7 +16,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    background-color: #f8f9fa;
+    background-color: #cedeeec7;
     line-height: 1.6;
 }
 
@@ -28,7 +28,7 @@ body {
 
 /* Navigation Styling */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95) !important;
+    background-color: rgba(195, 211, 224, 0.884) !important;
     backdrop-filter: blur(10px);
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -130,6 +130,15 @@ body {
     border-radius: 0 0 50px 50px;
 }
 
+/* urban banner */
+#BannerUrban .plantBnner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+/* end urban banner  */
 /* Contact Form Styling */
 .contact-form-wrapper {
     background: var(--white);
